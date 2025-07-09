@@ -6,10 +6,16 @@
 
 :root{
     --dark-red: #BE263B;
+    --light-grey: #FAFAFA;
+    --dark-grey: #383838;
+    --mid-grey: #595959;
+}
+body{
+    font-family: "Inter";
 }
 
+
 nav{
-    font-family: "Inter";
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -46,3 +52,49 @@ ul{
     background-color: var(--dark-red);
     color: white;
 }
+
+header{
+    background-color: var(--light-grey);
+
+    position: relative;
+    display: flex;
+    padding: 4.5rem 5rem  10rem;
+    align-items: center;
+    gap: 8rem;
+}
+
+.right-side{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+ 
+}
+
+header h2{
+    font-family: "Arsenal", sans-serif;
+    font-weight: 700;
+    font-size: 2.5rem;
+    line-height: 3rem;
+    font-size: 40px;
+    color:var(--dark-grey)
+}
+
+header p{
+    font-weight: 400;
+    font-size: 1.15rem;
+
+    color: var(--mid-grey);
+}
+
+header img{
+    border-radius: 20px;
+}
+
+.divider{
+    position: absolute;
+    bottom: -8rem;
+    left:0;
+}
+
+
+
