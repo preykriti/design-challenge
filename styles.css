@@ -9,6 +9,8 @@
     --light-grey: #FAFAFA;
     --dark-grey: #383838;
     --mid-grey: #595959;
+
+    --side-padding: 5rem;
 }
 body{
     font-family: "Inter";
@@ -40,7 +42,7 @@ ul{
     gap: 1rem;
     
 }
-.navbar-buttons button{
+.navbar-buttons button, .button{
     border: none;
     padding: 0.7rem 1rem;
     border-radius: 4px;
@@ -48,7 +50,7 @@ ul{
     font-family: "Plus Jakarta Sans", sans-serif;
 }
 
-.signup-button{
+.signup-button, .button{
     background-color: var(--dark-red);
     color: white;
 }
@@ -58,19 +60,19 @@ header{
 
     position: relative;
     display: flex;
-    padding: 4.5rem 5rem  10rem;
+    padding: 4.5rem var(--side-padding) 8rem;
     align-items: center;
     gap: 8rem;
 }
 
-.right-side{
+header .right-side{
     display: flex;
     flex-direction: column;
     gap: 2rem;
  
 }
 
-header h2{
+.title{
     font-family: "Arsenal", sans-serif;
     font-weight: 700;
     font-size: 2.5rem;
@@ -82,7 +84,7 @@ header h2{
 header p{
     font-weight: 400;
     font-size: 1.15rem;
-
+    line-height: 1.75rem;
     color: var(--mid-grey);
 }
 
@@ -92,9 +94,59 @@ header img{
 
 .divider{
     position: absolute;
-    bottom: -8rem;
+    bottom: -5rem;
     left:0;
+    overflow: hidden;
+}
+.divider img{
+    max-width: 100%;
 }
 
+.stats{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 var(--side-padding);
+    align-items: center;
+    /* background-color: red; */
+}
+.stats .right-side{
+    flex: 1;
 
+}
 
+.stats .stats-button{
+    margin-top: 8rem;
+    font-size: 1rem;
+    padding: 1rem 2.3rem;
+}
+
+.short-title{
+    font-family:"Arsenal";
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: var(--dark-red);
+    margin-bottom: 1rem;
+}
+
+.stats .left-side{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  
+}
+
+.stat{
+    border-bottom: 1px solid var(--mid-grey);
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+
+}
+
+.stat-number{
+    font-family: "Arsenal";
+    font-weight: 700;
+    font-size: 4rem;
+    min-width: 100px;
+    margin-right: 4.5rem;
+}
