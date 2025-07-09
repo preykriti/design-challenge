@@ -1,0 +1,48 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+:root{
+    --dark-red: #BE263B;
+}
+
+nav{
+    font-family: "Inter";
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 2px 40px 0px rgba(189, 189, 189, 0.11);
+    height: 75px;
+    padding: 0 2rem;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700;
+
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap:3rem;
+}
+.navbar-buttons{
+    display: flex;
+    gap: 1rem;
+    
+}
+.navbar-buttons button{
+    border: none;
+    padding: 0.7rem 1rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+.signup-button{
+    background-color: var(--dark-red);
+    color: white;
+}
