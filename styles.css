@@ -128,10 +128,10 @@ header img{
 
 .short-title{
     font-family:"Optima", sans-serif;
-    font-weight: 700;
+    font-weight: 500;
     font-size: 1.2rem;
     color: var(--dark-red);
-    margin-bottom: 1rem;
+    margin-bottom: 1.2rem;
 }
 
 .stats .left-side{
@@ -158,13 +158,23 @@ header img{
 
 .stats h4{
     font-family: "Optima", sans-serif;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.1rem;
 }
 
 .story{
     padding: 4rem var(--side-padding);
     display: flex; 
+    gap: 5rem;
+}
+
+.story .right-side{
+    display: flex;
+    flex-direction: column;
     gap: 2rem;
+    font-family: 'Inter', sans-serif;
+    color: var(--dark-grey);
+    line-height: 1.75rem;
+    font-size: 1.2rem;
 }
 
 .work{
@@ -172,7 +182,7 @@ header img{
     display: flex;
     flex-direction: column;
     width: 100%;
-    overflow: hidden;
+    overflow-x: hidden;
     position: relative;
 }
 
@@ -213,4 +223,10 @@ header img{
     transform: rotate(10.22deg);
     width: 285px;
     height: 329px;
+}
+
+.divider-two img{
+    transform: rotate(180deg);
+    margin: -5rem;
+    margin-top: 1rem
 }
