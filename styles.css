@@ -11,11 +11,13 @@
 }
 
 :root{
-    --light-red: #f8ebeb;
+    --light-red: #F2DCDC;
+    --medium-red: #E4B8B9;
     --dark-red: #BE263B;
     --deep-red: #400D14;
     --light-grey: #FAFAFA;
-    --deep-grey: #4F20201A;
+    /* --deep-grey: #4F20201A; */
+    --deep-grey: #4F2020;
     --footer-color: #141414;
     --dark-grey: #383838;
     --mid-grey: #595959;
@@ -67,9 +69,14 @@ ul{
 
 header{
     background-color: var(--light-grey);
-    position: relative;
     display: flex;
-    padding: 4.5rem var(--side-padding) 8rem;
+    flex-direction: column;
+    padding: 4.5rem var(--side-padding) 0;
+    overflow-x: hidden;
+}
+
+.header-top{
+    display: flex;
     align-items: center;
     gap: 8rem;
 }
@@ -100,15 +107,8 @@ header img{
     border-radius: 20px;
 }
 
-.divider{
-    position: absolute;
-    bottom: -5rem;
-    left:0;
-    overflow: hidden;
-}
-
 .divider img{
-    max-width: 100%;
+    margin-left: -5rem;
 }
 
 .stats{
@@ -116,7 +116,6 @@ header img{
     justify-content: space-between;
     padding: 0 var(--side-padding);
     align-items: center;
-    /* background-color: red; */
 }
 
 .stats .right-side{
@@ -235,13 +234,13 @@ header img{
 .divider-two img{
     transform: rotate(180deg);
     margin-left: -5rem;
+    
 }
 
-.divider-two{
-    background-blend-mode: multiply;
+/* .divider-two{
     height: fit-content;
     min-height: min-content;
-}
+} */
 
 /* !--------------------------------------- */
 
@@ -252,6 +251,7 @@ header img{
     display: flex;
     flex-direction: column;
     align-items: center;
+    overflow-x: hidden;
 }
 
 .team h2{
@@ -267,6 +267,7 @@ header img{
     display: grid;
     grid-template-columns: repeat(3, auto);
     column-gap: 4rem;
+    row-gap: 2.5rem;
     justify-content: center;
     
 }
@@ -427,6 +428,121 @@ header img{
 footer{
     background-color: var(--footer-color);
     color: white;
-    padding: 3.6 var(--side-padding);
+    padding: 3.6rem var(--side-padding) 0;
+    margin: 0;
 }
 
+.footer-top{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+.left-side-footer{
+    flex: 1;
+}
+
+.left-side-footer h3{
+    font-family: "Optima";
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 2.125rem;
+}
+
+.signup-features{
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    row-gap: 1rem;
+    column-gap: 0;
+    max-width: 400px;
+    margin-bottom: 2.4rem;
+}
+
+.feature{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.check-box{
+    background-color: var(--light-red) ;
+    width: 16px;
+    height: 16px;
+    border-radius: 4.36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.check-box img{
+    width: 8.73px;
+    height: 8.73px;
+}
+
+.signup-input{
+    display: flex;
+    border-radius:  6px;
+    overflow: hidden;
+    max-width: 24rem;
+    border: 1px solid var(--dark-red);
+}
+
+.signup-input button{
+    background-color: var(--medium-red);
+    color: var(--deep-red);
+    border: none;
+    padding: 0 1rem;
+    cursor: pointer;
+    font-size: 1.125rem;
+    font-family: "Inter";
+    
+}
+
+.signup-input input{
+    flex: 1;
+    padding: 0.8rem 22px;
+    border:none;
+}
+
+.signup-input input::placeholder{
+    color: var(--mid-grey);
+    font-family: "Inter";
+    font-size: 1.125rem;
+}
+
+.right-side-footer{
+    flex: 1;
+    gap: 4rem;
+    display: flex;
+
+}
+
+.links h4{
+    font-size: 1.125rem;
+    margin-bottom: 1rem;
+    font-family: "Optima";
+    font-weight: 500;
+
+}
+
+.links ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem
+}
+
+.links li{
+    font-weight: 200;
+}
+
+.copyright{
+    font-family: "Optima";
+    font-weight: 500;
+    font-size: 1.125;
+    text-align: center;
+    border-top: 1px solid white;
+    margin: 3.25rem -5rem 0;
+    padding: 1.125rem 0;
+}
