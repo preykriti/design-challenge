@@ -107,8 +107,15 @@ header img{
     border-radius: 20px;
 }
 
+.divider{
+    margin: 0;
+    padding: 0;
+
+}
+
 .divider img{
     margin-left: -5rem;
+    display: block;
 }
 
 .stats{
@@ -161,6 +168,7 @@ header img{
 .stats h4{
     font-family: "Optima", sans-serif;
     margin-bottom: 1.1rem;
+    text-align: left;
 }
 
 .story{
@@ -197,16 +205,13 @@ header img{
     gap: 4.9rem;
     margin-top: 4rem;
     transition: transform 1s ease-out;
-    will-change: transform;
 }
 
 .scroll-img{
-  
     border-radius: 12px;
     object-fit: cover;
     transition: transform 0.5s ease;
 }
-
 
 .rotate1{
     transform: rotate(-12deg); 
@@ -302,7 +307,7 @@ header img{
 
 .member-name{
     font-family: "Optima";
-    font-size: 24px;
+    font-size: 1.5rem;
     font-weight: 500;
     color: var(--deep-red)
 }
@@ -310,7 +315,7 @@ header img{
 .member-post{
     color: var(--mid-grey);
     font-weight: 400;
-    font-size: 1.2;
+    font-size: 1.075rem;
 }
 
 .social-media-icons{
@@ -320,7 +325,7 @@ header img{
 
 .icon{
     border-radius: 50%;
-    border: 1px solid var(--deep-grey);
+    border: 1px solid var(--light-red);
     width: 48px;
     height: 48px;
     display: flex;
@@ -396,8 +401,7 @@ header img{
 .review-card > p{
     color: var(--mid-grey);
     font-size: 1.55rem;
-    line-height: 150%;
-    
+    line-height: 150%;   
 }
 
 .review-card > p::before{
@@ -416,7 +420,6 @@ header img{
     font-size: 1.125rem;
     font-weight: 500;
     color: var(--dark-grey);
-
 }
 
 .reviewer-info p{
@@ -495,8 +498,7 @@ footer{
     padding: 0 1rem;
     cursor: pointer;
     font-size: 1.125rem;
-    font-family: "Inter";
-    
+    font-family: "Inter"; 
 }
 
 .signup-input input{
@@ -515,7 +517,6 @@ footer{
     flex: 1;
     gap: 4rem;
     display: flex;
-
 }
 
 .links h4{
@@ -523,7 +524,6 @@ footer{
     margin-bottom: 1rem;
     font-family: "Optima";
     font-weight: 500;
-
 }
 
 .links ul{
@@ -543,6 +543,188 @@ footer{
     font-size: 1.125;
     text-align: center;
     border-top: 1px solid white;
-    margin: 3.25rem -5rem 0;
+    margin: 3.25rem 0 0;
     padding: 1.125rem 0;
+}
+
+
+
+/* !---------------------------------------- */
+@media (max-width: 768px){
+    :root{
+        --side-padding: 1rem;
+    }
+
+    nav ul{
+        display: none;
+    }
+
+    nav{
+        width: 100vw;
+        padding: 0 1rem;
+        gap: 0.5rem;
+    }
+
+    header{
+        padding: 1.8rem var(--side-padding) 0;
+    }
+
+    .header-top{
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .title{
+        font-size: 2rem;
+        line-height: 2.5rem;
+    }
+
+    header img{
+        max-width: 100%;
+    }
+
+    .stats{
+        flex-direction: column;
+        padding: 2rem var(--side-padding);
+        gap: 3rem;
+        text-align: center;
+    }
+
+    .stats .stats-button{
+        margin-top: 3rem;
+        padding: 0.7rem 2rem;
+    }
+
+    .stat-number{
+        font-size: 3rem;
+        margin-right: 3.5rem;
+    }
+
+    .story{
+        flex-direction: column;
+        padding: 3rem var(--side-padding);
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .story .right-side{
+        gap: 1.5rem;
+    }
+
+    .work{
+        padding: 2rem var(--side-padding);
+
+    }
+
+    .work-images{
+        margin-top: 3rem;
+        gap: 2.9rem;
+    }
+
+    .scroll-img{
+        max-width: 200px;
+        height: auto;
+    }
+
+    .team h2{
+        font-size: 2rem;
+        margin: 2rem 0 2.8rem;
+    }
+
+    .team-info-container{
+        grid-template-columns: repeat(2, auto);
+        column-gap: 1.5rem;
+        row-gap: 1.5rem;
+    }
+
+    .member-card{
+        gap: 0.8rem;
+    }
+
+    .member-image-container{
+        width: 150px;
+        height: 150px;
+    }
+
+    .member-post{
+        font-size: 0.8rem;
+    }
+
+    .social-media-icons{
+        gap: 0.6rem;
+    }
+
+    .icon{
+        width: 38px;
+        height: 38px;
+    }
+
+    .social-media-icons img{
+        width: 20px;
+        height: 20px;
+    }
+
+    .team button{
+        margin: 2.5rem 0;
+        font-size: 1rem;
+    }
+
+    .customer-review{
+        padding: 2rem var(--side-padding) 4rem;
+    }
+
+    .heading{
+        flex-direction: column;
+        text-align: center;
+        gap: 1.5rem;
+    }
+
+    .heading button{
+        font-size: 1rem;
+        padding: 0.8rem 2rem;
+    }
+
+    .review-card-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .review-card{
+        max-width: 80%;
+        min-height: 380px;
+        padding: 5rem 2rem 2rem;
+    }
+
+    .review-card > p{
+        font-size: 1.4rem;
+    }
+
+    .footer-top{
+        flex-direction: column;
+    }
+
+    .left-side-footer h3{
+        margin-bottom: 2rem;
+    }
+
+    .signup-features{
+        margin-bottom: 2rem;
+    }
+
+    .right-side-footer{
+        gap: 0.5rem;
+        justify-content: space-between;
+    }
+
+    .copyright{
+        margin: 1.5rem 0 0
+    }
+
+    
+
+   
+    
+    
+    
 }
