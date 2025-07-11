@@ -12,7 +12,6 @@ let hasAnimated = false;
 
 
 const observer = new IntersectionObserver((entries, observer) =>{
-    console.log("helo");
     entries.forEach((entry)=>{
         if(entry.isIntersecting && !hasAnimated){
             hasAnimated=true;

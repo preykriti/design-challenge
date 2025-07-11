@@ -379,7 +379,7 @@ header img{
 }
 
 .icon:hover{
-    background-color: var(--deep-red);
+    background-color: var(--medium-red);
     cursor: pointer;
 }
 
@@ -456,9 +456,9 @@ header img{
 }
 
 .review-card > p::before{
-    content: "“";
+    content: url("assets/images/quote.svg");
     position: absolute;
-    top: 2.75rem;
+    top: 1rem;
     left: 2.75rem;
     font-size: 5rem;
     color: var(--dark-red);
