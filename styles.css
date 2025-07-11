@@ -302,6 +302,7 @@ header img{
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
+    position: relative;
 }
 
 .team h2{
@@ -319,7 +320,6 @@ header img{
     column-gap: 4rem;
     row-gap: 2.5rem;
     justify-content: center;
-    
 }
 
 .member-card{
@@ -327,8 +327,16 @@ header img{
     flex-direction: column;
     align-items: center;
     gap:1rem;
-    /* width: fit-content; */
     justify-content: center;
+}
+
+
+.annotation-img{
+    position: absolute;
+    right:8rem;
+    bottom: 17;
+    z-index: 30;
+    height: 10rem;
 }
 
 .member-image-container{
@@ -736,6 +744,11 @@ footer{
     .member-post{
         font-size: 0.8rem;
     }
+
+    .annotation-img{
+        display: none;
+    }
+    
 
     .social-media-icons{
         gap: 0.6rem;
