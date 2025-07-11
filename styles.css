@@ -107,12 +107,6 @@ header img{
     border-radius: 20px;
 }
 
-.divider{
-    margin: 0;
-    padding: 0;
-
-}
-
 .divider img{
     margin-left: -5rem;
     display: block;
@@ -567,6 +561,16 @@ footer{
 
     header{
         padding: 1.8rem var(--side-padding) 0;
+        flex-direction: column;
+    }
+
+    .divider{
+        margin: 0 -2rem;
+    }
+    .divider img{
+        display: block;
+        margin: 0;
+ 
     }
 
     .header-top{
