@@ -5,11 +5,8 @@ hamburger.addEventListener('click', () => {
     mobileMenu.classList.toggle('show');
 });
 
-
-
 const statNumbers = document.querySelectorAll(".stat-number");
 let hasAnimated = false;
-
 
 const observer = new IntersectionObserver((entries, observer) =>{
     entries.forEach((entry)=>{
