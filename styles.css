@@ -707,7 +707,7 @@ footer{
     }
 
     .work{
-        padding: 2rem var(--side-padding);
+        padding: 2rem var(--side-padding) 0;
 
     }
 
@@ -836,6 +836,10 @@ footer{
         font-size: 1rem;
     }
 
+    
+    .work-images{
+        height: 350px;
+    }
     .scroll-img {
         min-width: 150px;
     }
