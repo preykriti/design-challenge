@@ -25,7 +25,27 @@
             <button  class="signup-button button">Sign Up</button>
             <button class="login-button">Log In</button>
         </div>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <div class="mobile-menu" id="mobile-menu">
+            <ul>
+                <li>About us</li>
+                <li>Products</li>
+                <li>Features</li>
+                <li>Our Blog</li>
+                <li>Downloads</li>
+                <button class="signup-button button">Sign Up</button>
+                <button class="login-button button">Log In</button>
+            </ul>
+    </div>
     </nav>
+
+    
+
+
     <header>
         <div class="header-top">
         <div class="right-side">
@@ -37,7 +57,7 @@
     </div>
 
         <div class="divider">
-            <img src="./assets/images/Divider.png" alt="divider image">
+            <img src="./assets/images/Divider.png" alt="divider image" >
         </div> 
 
     </header>
@@ -51,30 +71,30 @@
             <h3 class="title">When we get to work we really make things happen fast and powerfully</h3>
             <button class="button stats-button">Sign up</button>
         </div>
-        <div class="left-side">
-            <div class="stat one">
-                <div class="stat-number">0</div>
+        <div class="left-side" id="stat-info">
+            <div class="stat">
+                <h1 class="stat-number" data-target="41">0</h1>
                 <div  class="stat-text">
                     <h4>Cups of coffee</h4>
                     <p>Designing this section</p>
                 </div>
             </div>
-            <div class="stat two">
-                <div class="stat-number">0</div>
+            <div class="stat">
+                <h1 class="stat-number" data-target="51">0</h1>
                 <div  class="stat-text">
                     <h4>Languages spoken</h4>
                     <p>On our table in the pub</p>
                 </div>
             </div>
-            <div class="stat three">
-                <div class="stat-number">98</div>
+            <div class="stat">
+                <h1 class="stat-number" data-target="98">0</h1>
                 <div  class="stat-text">
                     <h4>Dollars spent today</h4>
                     <p>On khachapuri imeruli</p>
                 </div>
             </div>
-            <div class="stat four">
-                <div class="stat-number">661</div>
+            <div class="stat">
+                <h1 class="stat-number" data-target="661">0</h1>
                 <div  class="stat-text">
                     <h4>Team members</h4>
                     <p>Working right now</p>
@@ -101,7 +121,7 @@
             <h3 class="title">Work shouldn’t be boring</h3>
             <p>I want to fly like an angel flare on a ten feet snare I want to dance until the sun comes I want to fight your cousin.</p>
         </div>
-        <div class="work-images">
+        <div class="work-images" id = "images-container">
             <img src="./assets/images/scroll-img-1.jpg" alt="work image 1" class="scroll-img rotate1">
             <img src="./assets/images/scroll-img-2.jpg" alt="work image 2" class="scroll-img rotate2">
             <img src="./assets/images/scroll-img-3.jpg" alt="work image 3" class="scroll-img rotate3">
@@ -126,34 +146,18 @@
                 <p class="member-post">Cloud Solutions Architect</p>
                 <div class="social-media-icons">
                     <div class="facebook icon">
-                        <img src="assets/images/logos/facebook.png" alt="facebook icon">
+                        <img src="assets/images/logos/facebook.svg" alt="facebook icon" >
                     </div>
                     <div class="insta icon">
-                        <img src="assets/images/logos/insta.png" alt="insta icon">
+                        <img src="assets/images/logos/insta.svg" alt="insta icon">
                     </div>
                     <div class="linkedin icon">
-                        <img src="assets/images/logos/linkedin.png" alt="linkedin icon">
+                        <img src="assets/images/logos/linkedin.svg" alt="linkedin icon">
                     </div>
                 </div>
             </div> 
             <div class="member-card">
                 <div class="member-image-container"><img src="assets/images/team/mem2.jpg" alt="team member 2" class="member-image"></div>
-                <h4 class="member-name">Jacob Jones</h4>
-                <p class="member-post">Cloud Solutions Architect</p>
-                <div class="social-media-icons">
-                    <div class="facebook icon">
-                        <img src="assets/images/logos/facebook.png" alt="facebook icon">
-                    </div>
-                    <div class="insta icon">
-                        <img src="assets/images/logos/insta.png" alt="insta icon">
-                    </div>
-                    <div class="linkedin icon">
-                        <img src="assets/images/logos/linkedin.png" alt="linkedin icon">
-                    </div>
-                </div>
-            </div>
-            <div class="member-card">
-                <div class="member-image-container"><img src="assets/images/team/mem3.jpg" alt="team member 3" class="member-image"></div>
                 <h4 class="member-name">Kathryn Murphy</h4>
                 <p class="member-post">Cybersecurity Specialist</p>
                 <div class="social-media-icons">
@@ -169,9 +173,25 @@
                 </div>
             </div>
             <div class="member-card">
-                <div class="member-image-container"><img src="assets/images/team/mem4.jpg" alt="team member 4" class="member-image"></div>
+                <div class="member-image-container"><img src="assets/images/team/mem3.jpg" alt="team member 3" class="member-image"></div>
                 <h4 class="member-name">Cody Fisher</h4>
-                <p class="member-post">Cloud Solutions Architect</p>
+                <p class="member-post">Network Engineer</p>
+                <div class="social-media-icons">
+                    <div class="facebook icon">
+                        <img src="assets/images/logos/facebook.png" alt="facebook icon">
+                    </div>
+                    <div class="insta icon">
+                        <img src="assets/images/logos/insta.png" alt="insta icon">
+                    </div>
+                    <div class="linkedin icon">
+                        <img src="assets/images/logos/linkedin.png" alt="linkedin icon">
+                    </div>
+                </div>
+            </div>
+            <div class="member-card">
+                <div class="member-image-container"><img src="assets/images/team/mem4.jpg" alt="team member 4" class="member-image"></div>
+                <h4 class="member-name">Arlene McCoy</h4>
+                <p class="member-post">QA Tester</p>
                 <div class="social-media-icons">
                     <div class="facebook icon">
                         <img src="assets/images/logos/facebook.png" alt="facebook icon">
@@ -186,24 +206,8 @@
             </div>
             <div class="member-card">
                 <div class="member-image-container"><img src="assets/images/team/mem5.jpg" alt="team member 5" class="member-image"></div>
-                <h4 class="member-name">Arlene McCoy</h4>
-                <p class="member-post">Cloud Solutions Architect</p>
-                <div class="social-media-icons">
-                    <div class="facebook icon">
-                        <img src="assets/images/logos/facebook.png" alt="facebook icon">
-                    </div>
-                    <div class="insta icon">
-                        <img src="assets/images/logos/insta.png" alt="insta icon">
-                    </div>
-                    <div class="linkedin icon">
-                        <img src="assets/images/logos/linkedin.png" alt="linkedin icon">
-                    </div>
-                </div>
-            </div>
-            <div class="member-card">
-                <div class="member-image-container"><img src="assets/images/team/mem6.jpg" alt="team member 6" class="member-image"></div>
                 <h4 class="member-name">Theresa Webb</h4>
-                <p class="member-post">Cloud Solutions Architect</p>
+                <p class="member-post">Database Administrator</p>
                 <div class="social-media-icons">
                     <div class="facebook icon">
                         <img src="assets/images/logos/facebook.png" alt="facebook icon">
@@ -216,6 +220,24 @@
                     </div>
                 </div>
             </div>
+            <div class="member-card member-six">
+                <div class="member-image-container"><img src="assets/images/team/mem6.jpg" alt="team member 6" class="member-image"></div>
+                <h4 class="member-name">Ralph Edwards</h4>
+                <p class="member-post">Technical Support Engineer</p>
+                <div class="social-media-icons">
+                    <div class="facebook icon">
+                        <img src="assets/images/logos/facebook.png" alt="facebook icon">
+                    </div>
+                    <div class="insta icon">
+                        <img src="assets/images/logos/insta.png" alt="insta icon">
+                    </div>
+                    <div class="linkedin icon">
+                        <img src="assets/images/logos/linkedin.png" alt="linkedin icon">
+                    </div>
+                </div>
+                <img src="assets/images/annotation-img.svg" alt="" class="annotation-img">
+            </div>
+            
         </div>
         <button class="button">See Open Vacancies</button>
     </section>
@@ -259,7 +281,10 @@
 
     </section>
 
+
+    
     <footer>
+        <img src="assets/images/decoration.svg" alt="" class="decoration-img">
         <div class="footer-top">
             <div class="left-side-footer">
             <h3>Start your free trial</h3>
@@ -302,17 +327,17 @@
                 <ul>
                     <li>The Blog</li>
                     <li>Downloads</li>
-                    <li>Our History</li>
-                    <li>Investorys</li>
+                    <li>Change Log</li>
+                    <li>Slack Channel</li>
                 </ul>
             </div>
             <div class="links">
-                <h4>Our Company</h4>
+                <h4>Our Product</h4>
                 <ul>
-                    <li>Our Team</li>
-                    <li>Company Vision</li>
-                    <li>Our History</li>
-                    <li>Investorys</li>
+                    <li>New Features</li>
+                    <li>Roadmap</li>
+                    <li>Product Demo</li>
+                    <li>Pricing</li>
                 </ul>
             </div>
             </div>
@@ -321,9 +346,7 @@
             Company.
         </div>
     </footer>
-
     
-
     <script src="script.js"></script>
 </body>
 </html>
